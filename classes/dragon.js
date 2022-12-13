@@ -6,10 +6,10 @@ class Dragon {
   breathesFire() {
     return `${this.name} breathes fire everywhere! BURN!!!!`
   }
-  static getDragons(...args) {
+  static getDragons(...dragons) {
     let dragonNames = []
-    args.forEach(arg => {
-      dragonNames.push(arg.name)
+    dragons.forEach(dragon => {
+      dragonNames.push(dragon.name)
     });
     return dragonNames
   }
